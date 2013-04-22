@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Home
-tagline: I am trying to document my experience in Seattle objective, believe it or not.
+tagline: Documenting the life in Seattle.
 ---
 {% include JB/setup %}
 
