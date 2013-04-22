@@ -10,7 +10,7 @@ tagline: I am trying to document my experience in Seattle objective, believe it 
 <div>
 	<h2><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h2>    
 	<span>{{ post.date | date_to_string }}</span>
-	{{ post.content | truncatewords:75}}<br>
+	{{ post.content |strip_html |truncatewords:10}}<br>
 	<a href="{{ post.url }}">Read more...</a><br><br>
 	<hr/>
 </div>
