@@ -3,11 +3,11 @@
 		<!--weibo -->
 		<script type="text/javascript" charset="utf-8">
 		(function(){
-		  var _w = 24 , _h = 24;
+		  var _w = 90 , _h = 24;
 		  var param = {
 		    url:location.href,
 		    type:'2',
-		    count:'', /**是否显示分享数，1显示(可选)*/
+		    count:'1', /**是否显示分享数，1显示(可选)*/
 		    appkey:'', /**您申请的应用appkey,显示分享来源(可选)*/
 		    title:'', /**分享的文字内容(可选，默认为所在页面的title)*/
 		    pic:'', /**分享图片的路径(可选)*/
@@ -24,7 +24,10 @@
 		</script>
 		
 		<!-- g+ -->
-		<div class="g-plusone"></div>
+		<div class="g-plusone" data-size="medium"></div>
+		
+		<a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 		
 	</div>
 </div>
