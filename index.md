@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Home
-tagline: Documenting the life in Seattle.
+tagline:  == 127.0.0.1
 ---
 {% include JB/setup %}
 

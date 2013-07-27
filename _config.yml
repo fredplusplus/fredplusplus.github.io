@@ -10,13 +10,11 @@ pygments: true
 # so be sure to set them if your theme uses them.
 #
 title : 杂七杂八的西雅图
-tagline: To document my Seattle experience "objectively" (yeah right... =_=)
+tagline: Life in Seattle
 author :
   name : fredplusplus
   email : fredplusplus+blog@gmail.com
   github : fredplusplus
-#  twitter : username
-#  feedburner : feedname
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
