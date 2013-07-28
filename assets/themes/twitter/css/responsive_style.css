@@ -32,7 +32,9 @@ footer p {
 }
 
 img {
-	max-width: 100%;
+	max-width: 70%;
+	border-radius: 15px;
+	margin: 0px auto;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	
