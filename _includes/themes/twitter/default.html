@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="google-site-verification" content="bugyV0guDI2ei6bXM4zqyh9DGhTqZP4ahObY19FBknM" />
     <meta name="description" content="Life style blogging in Seattle. 生活在西雅图的博客" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }}</title>
     {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
     <meta name="author" content="{{ site.author.name }}">
@@ -15,9 +16,10 @@
 
     <!-- Le styles -->
     <link href="{{ ASSET_PATH }}/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="{{ ASSET_PATH }}/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
-    <script type="text/javascript" src="{{ASSET_PATH}}/bootstrap/css/boostrap.min.js" ></script>
-    <link href="{{ ASSET_PATH }}/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="{{ASSET_PATH}}/bootstrap/js/bootstrap.min.js" ></script>
+    <link href="{{ ASSET_PATH }}/css/responsive_style.css?body=1" rel="stylesheet" type="text/css" media="all">
 
     <!-- Le fav and touch icons -->
   <!-- Update these with your own images
@@ -30,24 +32,31 @@
 
   <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <a class="brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
-          <ul class="nav">
-            {% assign pages_list = site.pages %}
-            {% assign group = 'navigation' %}
-            {% include JB/pages_list %}
-          </ul>
+    	<div class="container">
+	    	<!-- .navbar-toggle is used as the toggle for collapsed navbar content -->
+	    	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+	      		<span class="icon-bar"></span>
+	      		<span class="icon-bar"></span>
+	      		<span class="icon-bar"></span>
+	    	</button>
+    		<a class="navbar-brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
+    		<div class="nav-collapse collapse navbar-responsive-collapse">
+          		<ul class="nav navbar-nav">
+		            {% assign pages_list = site.pages %}
+		            {% assign group = 'navigation' %}
+	    	        {% include JB/pages_list %}
+	          	</ul>
+        	</div>
         </div>
-      </div>
     </div>
 
     <div class="container">
-
-      <div class="content">
-        {{ content }}
-      </div>
-
+    	<div class="content">
+        	{{ content }}
+       	</div>
+	</div>
+	<div class="container">
+	</div>
       <footer>
         <p>&copy; {{ site.author.name }} 2013
           with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
