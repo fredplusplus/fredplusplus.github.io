@@ -1,10 +1,10 @@
 <div class="page-header">
-  <h1>{{ page.title }} <small>{{page.description}}</small></h1>
+	<h1>{{ page.title }} <small>{{page.description}}</small></h1>
+	{% include JB/sharing %}
 </div>
 
 <div class="row">
   <div class="col-lg-9 col-12">
-  	{% include JB/sharing %}
     {{ content }}
     <hr>
     <div class="pagination">
