@@ -3,7 +3,7 @@ layout: post
 title: "Newbie's Git Cheatsheet"
 description: ""
 category: Geek
-tags: [Git]
+tags: [Git, Toy]
 ---
 {% include JB/setup %}
 
